@@ -4,14 +4,14 @@ import webbrowser
 import os
 directory = os.getcwd()
 app = Tk()
-app.title("Cum Landia")
+app.title("Cum Landia V2")
 img =Image.open(directory + '/assets/' + '1.jpg')
 bg = ImageTk.PhotoImage(img)
 img2 = Image.open(directory + '/assets/' + "2.jpg")
 im2place =ImageTk.PhotoImage(img2)
 im2place2 =ImageTk.PhotoImage(img2)
 
-app.geometry("1024x600")
+app.geometry("1024x900")
 
 # Add image
 label = Label(app, image=bg)
@@ -38,12 +38,44 @@ def fr():
     webbrowser.open(url="https://furry.booru.org")
 def xh():
     webbrowser.open(url="https://xhamster.com")
+def e621():
+    webbrowser.open(url="https://e621.net/")
+def r34xyz():
+    webbrowser.open(url="https://r-34.xyz/")
+def drawfriends():
+    webbrowser.open(url="https://drawfriends.booru.org/")
+def blacked():
+    webbrowser.open(url="https://blacked.booru.org/")
+def censored():
+    webbrowser.open(url="https://censored.booru.org/")
+def erpg():
+    webbrowser.open("https://erpg.booru.org/")
+def garyc():
+    webbrowser.open("https://garycbooru.booru.org/")
+def footfet():
+    webbrowser.open("https://footfetishbooru.booru.org/")
+def allgirl():
+    webbrowser.open("https://allgirl.booru.org/")
+def myfap():
+    webbrowser.open("https://myfapbooru.booru.org/")
 
 r34 = Button(app, text="Rule34", command=r34)
 xv = Button(app, text="Xvideos", command=xv)
 xnxx = Button(app, text="Xnxx", command=xn)
 fry = Button(app, text="FurryBooru", command=fr)
 xha = Button(app, text="XHamster", command=xh)
+e621ha = Button(app, text="E621", command=e621)
+r34xyzha = Button(app, text="Rule34.xyz", command=r34xyz)
+drfha = Button(app, text="DrawFriends", command=drawfriends)
+blackedha = Button(app, text="BlackedBooru", command=blacked)
+censoredha = Button(app, text="CensoredBooru", command=censored)
+erpgha = Button(app, text="EroRPGBooru", command=erpg)
+garycha = Button(app, text="GarycBooru", command=garyc)
+footfha = Button(app, text="FootFetishBooru", command=footfet)
+allgirlha = Button(app, text="AllGirlBooru", command=allgirl)
+myfapha = Button(app, text="MyfapBooru", command=myfap)
+
+
 
 label4 = Label(app, text = "Satisfaciendo a orcos culiaos como vo' desde 2023",
                font=("Times New Roman", 13))
@@ -55,7 +87,17 @@ xv.pack()
 xnxx.pack()
 fry.pack()
 xha.pack()
-label4.pack(pady=70)
+e621ha.pack()
+r34xyzha.pack()
+drfha.pack()
+blackedha.pack()
+censoredha.pack()
+erpgha.pack()
+garycha.pack()
+footfha.pack()
+allgirlha.pack()
+myfapha.pack()
+label4.pack(pady=60)
 
 # Execute tkinter
 app.mainloop()
