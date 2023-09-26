@@ -11,7 +11,10 @@ img2 = Image.open(directory + '/assets/' + "2.jpg")
 im2place =ImageTk.PhotoImage(img2)
 im2place2 =ImageTk.PhotoImage(img2)
 
-app.geometry("1024x900")
+
+FHD = "1024x900"
+NOHD = "950x700"
+app.geometry(FHD)
 
 # Add image
 label = Label(app, image=bg)
@@ -34,6 +37,8 @@ def xv():
     webbrowser.open(url="https://xvideos.com")
 def xn():
     webbrowser.open(url="https://xnxx.com")
+def ph():
+    webbrowser.open(url="https://pornhub.com")
 def fr():
     webbrowser.open(url="https://furry.booru.org")
 def xh():
@@ -58,10 +63,14 @@ def allgirl():
     webbrowser.open("https://allgirl.booru.org/")
 def myfap():
     webbrowser.open("https://myfapbooru.booru.org/")
+def porndude():
+    webbrowser.open("https://theporndude.com/")
 
 r34 = Button(app, text="Rule34", command=r34)
 xv = Button(app, text="Xvideos", command=xv)
 xnxx = Button(app, text="Xnxx", command=xn)
+phb = Button(app, text="Pornhub", command=ph)
+tpd = Button(app, text="Porndude", command=porndude)
 fry = Button(app, text="FurryBooru", command=fr)
 xha = Button(app, text="XHamster", command=xh)
 e621ha = Button(app, text="E621", command=e621)
@@ -84,6 +93,8 @@ label2.pack(pady = 50)
 label3.pack(pady=55)
 r34.pack()
 xv.pack()
+phb.pack()
+tpd.pack()
 xnxx.pack()
 fry.pack()
 xha.pack()
